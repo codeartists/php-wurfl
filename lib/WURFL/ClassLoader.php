@@ -36,7 +36,7 @@ class WURFL_ClassLoader {
 			return FALSE;
 		}
 		if (!class_exists($className, false)) {
-			$ROOT = dirname(__FILE__) . DIRECTORY_SEPARATOR;
+			$ROOT = 'lib/php-wurfl/lib/WURFL' . DIRECTORY_SEPARATOR;
 
 			$classFilePath = str_replace('_', DIRECTORY_SEPARATOR, substr($className, 6)) . '.php';
 			require_once ($ROOT . $classFilePath);

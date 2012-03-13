@@ -1,7 +1,7 @@
 <?php
 
 if (!class_exists('Predis_Client')) {
-	require_once dirname(__FILE__) . '/../../redis.php';
+	require_once 'lib/redis.php';
 }
 
 class WURFL_Storage_Redis extends WURFL_Storage_Base {

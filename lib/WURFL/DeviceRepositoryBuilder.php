@@ -56,7 +56,7 @@ class WURFL_DeviceRepositoryBuilder {
 		$this->userAgentHandlerChain = $userAgentHandlerChain;
 		$this->devicePatcher = $devicePatcher;
 		if (strpos(PHP_OS, 'SunOS') === false) {
-			$this->lockFile = dirname(__FILE__)."/DeviceRepositoryBuilder.php";
+			$this->lockFile = "lib/php-wurfl/lib/WURFL/DeviceRepositoryBuilder.php";
 		} else {
 			// Solaris can't handle exclusive file locks on files unless they are opened for RW
 			$this->lockStyle = 'w+';

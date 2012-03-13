@@ -18,4 +18,4 @@
 /**
  * Require ClassLoader to dynamically load classes
  */
-require_once dirname(__FILE__) . '/ClassLoader.php';
+require_once 'lib/php-wurfl/lib/WURFL/ClassLoader.php';
